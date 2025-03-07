@@ -1,0 +1,14 @@
+name: testworkflow-servicios
+on:
+ push:
+  branches:
+   - VictorManuelCH
+jobs:
+ trabajo1:
+   runs-on: ubuntu-latest
+
+   steps:
+#    - name: checkout
+#      uses: actions/checkout@v2
+    - name: listar archivo
+      run: ls -la
